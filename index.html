@@ -1,118 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81D6829LG0');
+  </script>
+
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="We present DECORAIT; a decentralized registry through which content creators may assert their right to opt in or out of AI training as well as receive reward for their contributions.  Generative AI (GenAI) enables images to be synthesized using AI models trained on vast amounts of data scraped from public sources.">
-  <meta property="og:title" content="DECORAIT - DECentralized Opt-in/out Registry for AI Training"/>
-  <meta property="og:description" content="We present DECORAIT; a decentralized registry through which content creators may assert their right to opt in or out of AI training as well as receive reward for their contributions.  Generative AI (GenAI) enables images to be synthesized using AI models trained on vast amounts of data scraped from public sources."/>
-  <meta property="og:url" content="https://andrewjohngilbert.github.io/Decorait/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="assets/teaser_fixed.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AdaMVS is a redundancy-aware Ego–Exo fusion framework for proficiency estimation, accepted at ECCV 2026.">
+  <meta property="og:title" content="Moving Beyond More Views: Redundancy-Aware Ego–Exo Fusion for Proficiency Estimation"/>
+  <meta property="og:description" content="AdaMVS learns which exocentric views to use and VIB-GB learns how to fuse them robustly, reducing redundancy and overfitting in Ego–Exo proficiency estimation."/>
+  <meta property="og:image" content="assets/AdaMVS_Teaser.jpg"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="DECORAIT - DECentralized Opt-in/out Registry for AI Training">
-  <meta name="twitter:description" content="We present DECORAIT; a decentralized registry through which content creators may assert their right to opt in or out of AI training as well as receive reward for their contributions.  Generative AI (GenAI) enables images to be synthesized using AI models trained on vast amounts of data scraped from public sources.">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:title" content="Moving Beyond More Views: Redundancy-Aware Ego–Exo Fusion for Proficiency Estimation">
+  <meta name="twitter:description" content="ECCV 2026: adaptive view selection and overfitting-aware fusion for Ego–Exo proficiency estimation.">
+  <meta name="twitter:image" content="assets/AdaMVS_Teaser.jpg">
+  <meta name="keywords" content="ECCV 2026, EgoExo, proficiency estimation, action quality assessment, multiview learning, view selection, AdaMVS, VIB-GB">
 
-
-  <title>Academic Project Page</title>
+  <title>Moving Beyond More Views: Redundancy-Aware Ego–Exo Fusion for Proficiency Estimation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .question-banner { max-width: 900px; margin: 0 auto; }
+    .question-banner h2 { line-height: 1.25; }
+    .feature-card { height: 100%; border-radius: 14px; padding: 1.5rem; background: #f7f7f7; }
+    .result-number { font-size: 2.35rem; font-weight: 700; line-height: 1; margin-bottom: .35rem; }
+    .result-label { font-size: .95rem; color: #555; }
+    .figure-caption { max-width: 900px; margin: 1rem auto 0; }
+    .method-pill { display: inline-block; border-radius: 999px; padding: .25rem .7rem; margin: .15rem; background: #f2f2f2; font-weight: 600; }
+    .faq details { margin-bottom: .8rem; border-bottom: 1px solid #ddd; padding-bottom: .8rem; }
+    .faq summary { cursor: pointer; font-weight: 700; }
+    .bibtex-wrap { position: relative; }
+    .copy-button { position: absolute; top: .6rem; right: .6rem; }
+  </style>
 </head>
 <body>
 
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Moving Beyond More Views:<br>Redundancy-Aware Ego–Exo Fusion for Proficiency Estimation</h1>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DECORAIT - DECentralized Opt-in/out Registry for AI Training </h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="F" target="_blank">Kar Balan</a><sup>[1]</sup>,</span>
-                <span class="author-block">
-                  <a href="https://scholar.google.co.uk/citations?user=Xzt0ib0AAAAJ&hl=en&inst=15262737669262836719&oi=sra" target="_blank">Alex Black</a><sup>[1]</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://scholar.google.co.uk/citations?user=AlA3q94AAAAJ&hl=en&inst=15262737669262836719&oi=sra" target="_blank">Simon Jenni</a><sup>[2]</sup>,</span>
-                  <span class="author-block">
-                    <a href="S" target="_blank"> Andy Parsons </a><sup>[2]</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a><sup>[1]</sup>,</span>
-                  <span class="author-block">
-                    <a href="http://personal.ee.surrey.ac.uk/Personal/J.Collomosse/" target="_blank">John Collomosse</a>[1,2]
-                  </span>
-                  </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://www.linkedin.com/in/xudong-442302166/" target="_blank">Xu Dong</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://scholars.uow.edu.au/wanqing-li" target="_blank">Wanqing Li</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="https://www.surrey.ac.uk/people/anthony-adeyemi-ejeye" target="_blank">Anthony Adeyemi-Ejeye</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a><sup>1</sup></span>
+          </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Unviersity of Surrey[1], Adobe Resarch [2]<br>​​The 20th ACM SIGGRAPH European Conference on Visual Media Production</span>
-                
-                  </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> University of Surrey &nbsp; <sup>2</sup> University of Wollongong<br>
+              <strong>European Conference on Computer Vision (ECCV), 2026</strong>
+            </span>
+          </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://andrewjohngilbert.github.io/Decorait/assets/CVMP_DECORAIT.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-<!--                  <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
--->  
-                  <!-- Github link -->
-              <!--    <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-              -->
-
-                
-            </div>
+          <div class="publication-links" style="margin-top:1.5rem;">
+            <span class="link-block">
+              <a href="assets/AdaMVS_ECCV2026.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="https://github.com/dx199771/AdaMVS" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+              </a>
+            </span>
           </div>
         </div>
       </div>
@@ -120,21 +94,25 @@
   </div>
 </section>
 
+<section class="section pt-0">
+  <div class="container is-max-desktop question-banner has-text-centered">
+    <h2 class="title is-2">Are more camera views always better?</h2>
+    <p class="subtitle is-4">No. In Ego–Exo proficiency estimation, redundant or noisy exocentric views can dilute useful motion cues and increase overfitting.</p>
+    <p class="is-size-5"><strong>We learn both which views to look at and how to fuse them.</strong> AdaMVS selects informative views, while VIB-GB regularises the fused representation to suppress view-specific overfitting.</p>
+  </div>
+</section>
 
-<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/dreamboothpipeline_.png">
-      <h2 class="subtitle has-text-centered">
-        The DECORAIT and Dreambooth pipeline including registry querying and model personalization flow. The Dreambooth model is specialized using the 3 opted-in images of a car and the proposed apportionment algorithm is applied across the image corpus. The red cross indicated images which have been opted-out according to the DECORAIT registry. The resulting apportionment conducted on the generated synthetic image from the experiment as described in Sec.\ref{eval_dreambooth} is shown. The DLT wallet addresses of the three authors of the images are identified using the accompanying C2PA manifests. Payment is then conducted automatically, securely, and transparently using DLT, and one transaction's confirmation is pictured. 
+      <img src="assets/AdaMVS_Teaser.jpg" alt="Multi-exo-view fusion challenge and AdaMVS view selection">
+      <h2 class="subtitle has-text-centered figure-caption">
+        Conventional fusion treats all viewpoints as useful. Our analysis shows that some exocentric views contribute little information, and adding views can even reduce accuracy. AdaMVS instead learns to prioritise informative views before fusion.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-<!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -142,71 +120,208 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present DECORAIT; a decentralized registry through which content creators may assert their right to opt in or out of AI training as well as receive reward for their contributions.  Generative AI (GenAI) enables images to be synthesized using AI models trained on vast amounts of data scraped from public sources. Model and content creators who may wish to share their work openly without sanctioning its use for training are thus presented with a data governance challenge. Further, establishing the provenance of GenAI training data is important to creatives to ensure fair recognition and reward for their such use.  We report a prototype of DECORAIT, which explores hierarchical clustering and a combination of on/off-chain storage to create a scalable decentralized registry to trace the provenance of GenAI training data in order to determine training consent and reward creatives who contribute that data. DECORAIT combines distributed ledger technology (DLT) with visual fingerprinting, leveraging the emerging C2PA (Coalition for Content Provenance and Authenticity) standard to create a secure, open registry through which creatives may express consent and data ownership for GenAI.
+            Ego–Exo proficiency estimation combines fine-grained motion cues from egocentric video with spatial context from multiple exocentric cameras. However, simply adding more exocentric views can degrade performance because redundant or noisy perspectives dilute discriminative information and enlarge the feature space, encouraging view-specific overfitting. We address these problems with two complementary components. <strong>AdaMVS</strong> adaptively identifies and fuses the most informative view tokens under weak supervision, while <strong>VIB-GB</strong> combines Variational Information Bottleneck regularisation with Gradient Blending to compress redundant signals and balance learning across ego and exo branches. Experiments on EgoExo-4D and EgoExo-Fitness show that the framework learns both <em>which view to look at</em> and <em>how to fuse it</em>, achieving state-of-the-art proficiency estimation with improved robustness and efficiency.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-
-<!-- Paper poster -->
-<!--
-  <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Two problems, two complementary solutions</h2>
+    <div class="columns">
+      <div class="column">
+        <div class="feature-card">
+          <h3 class="title is-4">1. Multiview redundancy</h3>
+          <p>Different exocentric cameras often contain duplicated, occluded, blurred, or weakly informative content.</p>
+          <p class="mt-3"><span class="method-pill">AdaMVS</span></p>
+          <p>Scores view tokens, selects the most informative Top-K exocentric views, and performs adaptive token-level fusion without explicit view-level labels.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="feature-card">
+          <h3 class="title is-4">2. Fusion overfitting</h3>
+          <p>More views enlarge the representation and can cause one branch to dominate, memorising view-specific patterns rather than generalisable cues.</p>
+          <p class="mt-3"><span class="method-pill">VIB</span><span class="method-pill">Gradient Blending</span></p>
+          <p>Compresses non-essential latent information and dynamically balances ego/exo learning using overfitting-aware gradient weighting.</p>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
--->
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{Balan:CVMP:2023,
-        AUTHOR = Balan, Kar and Black, Alex and Jenni, Simon  and Parsons, Andy and  Gilbert Andrew and Collomosse, John",
-        TITLE = "DECORAIT - DECentralized Opt-in/out Registry for AI Training​",
-        BOOKTITLE = " The 20th ACM SIGGRAPH European Conference on Visual Media Production",
-        YEAR = "2023",
-        ​}</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Architecture</h2>
+      <img src="assets/AdaMVS_System.jpg" alt="AdaMVS and VIB-GB architecture">
+      <h2 class="subtitle has-text-centered figure-caption">
+        The egocentric stream captures fine-grained motion cues, while Exo-AdaMVS scores and selects informative exocentric views. Ego–Exo AdaMVS then fuses the streams, and VIB-GB regularises training to reduce overfitting before ordinal proficiency estimation.
+      </h2>
+    </div>
+  </div>
+</section>
 
-  <footer class="footer">
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Key results</h2>
+    <div class="columns is-multiline has-text-centered">
+      <div class="column is-one-third">
+        <div class="feature-card">
+          <div class="result-number">53.0%</div>
+          <div class="result-label">Best Ego+Exo accuracy on EgoExo-4D (K400)</div>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="feature-card">
+          <div class="result-number">+5.5</div>
+          <div class="result-label">percentage-point gain over SkillFormer on EgoExo-4D</div>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="feature-card">
+          <div class="result-number">48.8%</div>
+          <div class="result-label">Ego+Exo accuracy on EgoExo-Fitness (K600)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content has-text-justified mt-5">
+      <p>
+        Across pretrained backbones, the proposed framework consistently improves over conventional Ego–Exo fusion. On EgoExo-4D, AdaMVS reaches 53.0% with K400 features, compared with 47.5% for SkillFormer. The ablation study also shows the complementarity of the two ideas: AdaMVS improves the ego–exo baseline from 45.5% to 48.0%, while the complete AdaMVS + CORN + VIB-GB configuration reaches 51.0% in the controlled ablation setting.
+      </p>
+    </div>
+
+    <h3 class="title is-4 mt-6">Efficiency</h3>
+    <div class="columns is-vcentered">
+      <div class="column is-one-third has-text-centered">
+        <div class="result-number">0.26</div>
+        <div class="result-label">GFLOPs — AdaMVS-Small</div>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <div class="result-number">2.19M</div>
+        <div class="result-label">parameters — AdaMVS-Small</div>
+      </div>
+      <div class="column">
+        <p>AdaMVS-Small achieves 50.1% Ego+Exo accuracy with an over 11× reduction in computation and model size relative to AdaMVS-Large, retaining strong performance while substantially reducing complexity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">What does AdaMVS actually select?</h2>
+    <img src="assets/AdaMVS_ViewSelection.jpg" alt="Qualitative AdaMVS view selection results">
+    <div class="content has-text-justified figure-caption">
+      <p>
+        In successful cases, high-scoring views provide clearer and more discriminative cues, while low-scoring views are often affected by occlusion, blur, or redundant content. The model selects the Top-2 exocentric views and prunes the rest. Failure cases occur when viewpoints contain highly overlapping information and receive similar scores.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Datasets</h2>
+    <div class="columns">
+      <div class="column">
+        <div class="feature-card">
+          <h3 class="title is-4">EgoExo-4D</h3>
+          <p>1,087 hours of multiview video across nine activity categories, captured using one egocentric and four exocentric views, with proficiency labels across four discrete levels.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="feature-card">
+          <h3 class="title is-4">EgoExo-Fitness</h3>
+          <p>1,276 cross-view videos (about 32 hours), segmented into 6,131 single actions and annotated with interpretable action judgements and five-level quality scores.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Want to explore the details?</h2>
+    <p class="subtitle">Read the ECCV paper or explore the implementation.</p>
+    <div class="publication-links">
+      <span class="link-block">
+        <a href="assets/AdaMVS_ECCV2026.pdf" target="_blank" class="external-link button is-medium is-rounded is-dark">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Download Paper</span>
+        </a>
+      </span>
+      <span class="link-block">
+        <a href="https://github.com/dx199771/AdaMVS" target="_blank" class="external-link button is-medium is-rounded is-dark">
+          <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+        </a>
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light faq">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Frequently Asked Questions</h2>
+    <details open>
+      <summary>Why can adding more exocentric views hurt?</summary>
+      <p class="mt-2">Extra cameras may add duplicated, noisy, blurred, or occluded observations. Static fusion gives these weak views too much influence and also increases the capacity available for view-specific overfitting.</p>
+    </details>
+    <details>
+      <summary>Does AdaMVS need labels saying which camera is best?</summary>
+      <p class="mt-2">No. View importance is learned weakly from the proficiency-estimation task loss, without explicit view-level supervision.</p>
+    </details>
+    <details>
+      <summary>What is the role of VIB-GB?</summary>
+      <p class="mt-2">VIB compresses redundant latent information, while Gradient Blending reweights ego and exo learning according to branch-level overfitting. Together they improve generalisation after view selection.</p>
+    </details>
+    <details>
+      <summary>Can the method work with a different number of views?</summary>
+      <p class="mt-2">The selector is designed to be view-number agnostic through shared queries and permutation-invariant Transformer processing, allowing it to adapt to varying numbers of exocentric views.</p>
+    </details>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content bibtex-wrap">
+    <h2 class="title">BibTeX</h2>
+    <button class="button is-small copy-button" onclick="copyBibtex()">Copy BibTeX</button>
+    <pre><code id="bibtex">@inproceedings{Dong2026AdaMVS,
+  author    = {Xu Dong and Wanqing Li and Anthony Adeyemi-Ejeye and Andrew Gilbert},
+  title     = {Moving Beyond More Views: Redundancy-Aware Ego--Exo Fusion for Proficiency Estimation},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<script>
+function copyBibtex() {
+  const text = document.getElementById('bibtex').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const button = document.querySelector('.copy-button');
+    const oldText = button.innerText;
+    button.innerText = 'Copied!';
+    setTimeout(() => button.innerText = oldText, 1500);
+  });
+}
+</script>
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
